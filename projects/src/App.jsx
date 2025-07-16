@@ -8,6 +8,8 @@ import Web_Series from "./Pages/Web_Serise.jsx";
 import About from "./Pages/About.jsx";
 import Contact from "./Pages/Contact.jsx";
 import WebSeries from "./Pages/Web_Serise.jsx";
+import Movies from "./Pages/Movies.jsx";
+import Series from "./Pages/Series.jsx";
 import "./web.css";
 
 function App() {
@@ -26,10 +28,11 @@ function App() {
               </>
             }
           />
-          <Route path="/movies" element={<movies />} />
+          <Route path="/movies" element={<Movies />} />
           <Route path="/webseries" element={<WebSeries />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/series" element={<series />} />
+          <Route path="/series" element={<Series />} />
+
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
