@@ -55,7 +55,7 @@ const SeriesCard = ({ web }) => {
               }`}
               onClick={handleLike}
             >
-              👍 {likes}
+              ❤️ {likes}
             </button>
             <button
               className={`btn btn-sm ${
