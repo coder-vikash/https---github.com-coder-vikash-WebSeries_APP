@@ -47,6 +47,7 @@
   height: 50vh;
   object-fit: cover;
   background-size: cover;
+  position: ;
 }
 
 .carousel-caption {
