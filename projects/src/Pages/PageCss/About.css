@@ -1,0 +1,14 @@
+/* src/Pages/About.css */
+.container {
+  font-family: "Segoe UI", sans-serif;
+}
+
+p,
+li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.shadow {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}

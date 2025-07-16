@@ -1,0 +1,42 @@
+/* src/components/LoginPage/Signup.css */
+
+.signup-container {
+  height: 100vh;
+  background: linear-gradient(to right, #1e1e2f, #0f0f0f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.signup-card input {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: none;
+}
+
+.signup-card input::placeholder {
+  color: #ccc;
+}
+
+.signup-card a {
+  text-decoration: none;
+}
+
+.signup-card a:hover {
+  text-decoration: underline;
+}
