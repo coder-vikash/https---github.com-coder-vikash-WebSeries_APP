@@ -1,18 +1,32 @@
-// src/components/Navbar/Navbar.jsx
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "font-awesome/css/font-awesome.min.css";
+import ThemeToggle from "../TongleThem/TongleThem";
 
 export default function Navbar() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchTerm.trim()) {
+      navigate(`/search?query=${encodeURIComponent(searchTerm.trim())}`);
+      setSearchTerm("");
+    }
+  };
+
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark fixed-top"
+      className="navbar navbar-expand-lg navbar-dark fixed-top shadow"
       style={{ backgroundColor: "#0f0f0f" }}
     >
       <div className="container-fluid">
-        <Link className="navbar-brand text-danger fw-bold" to="/">
-          🎬 CineStream
+        {/* Brand Logo */}
+        <Link className="navbar-brand text-danger fw-bold fs-4" to="/">
+          <i className="fa fa-film me-2"></i> CineStream
         </Link>
 
+        {/* Mobile Toggle Button */}
         <button
           className="navbar-toggler"
           type="button"
@@ -22,6 +36,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
+        {/* Main Navigation */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -54,22 +69,43 @@ export default function Navbar() {
                 About
               </Link>
             </li>
+            {/* Theme Toggle */}
+            <ThemeToggle />
           </ul>
-
-          <form className="d-flex me-3">
+          {/* .....................Search Box in 1 hours ....................*/}
+          <form
+            className="d-flex me-3 position-relative w-90 w-md-auto"
+            onSubmit={handleSearch}
+          >
             <input
-              className="form-control me-2 bg-dark text-white"
-              placeholder="Search..."
+              className="form-control bg-dark text-white"
+              type="search"
+              placeholder="Search movies, genre or language..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              style={{ minWidth: "200px" }}
             />
-            <button className="btn btn-outline-info">🔍</button>
+            <button className="btn btn-outline-info ms-2" type="submit">
+              <i className="fa fa-search"></i>
+            </button>
           </form>
 
-          <div className="d-flex">
-            <Link to="/login" className="btn btn-outline-danger me-2">
-              Login
+          {/* Auth Buttons */}
+          <div className="d-flex align-items-center">
+            <Link
+              to="/login"
+              className="btn btn-outline-danger d-flex align-items-center me-2 px-3"
+              style={{ height: "40px", fontSize: "14px" }}
+            >
+              <i className="fa fa-sign-in me-1"></i> Login
             </Link>
-            <Link to="/signup" className="btn btn-danger">
-              Sign Up
+
+            <Link
+              to="/signup"
+              className="btn btn-danger d-flex align-items-center px-3"
+              style={{ height: "40px", fontSize: "14px" }}
+            >
+              <i className="fa fa-user-plus me-1"></i> Sign Up
             </Link>
           </div>
         </div>

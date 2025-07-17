@@ -10,6 +10,7 @@ import Contact from "./Pages/Contact.jsx";
 import WebSeries from "./Pages/Web_Serise.jsx";
 import Movies from "./Pages/Movies.jsx";
 import Series from "./Pages/Series.jsx";
+import SearchResults from "./Pages/SearchResult.jsx";
 import "./web.css";
 
 function App() {
@@ -28,11 +29,11 @@ function App() {
               </>
             }
           />
+          <Route path="/search" element={<SearchResults />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/webseries" element={<WebSeries />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/series" element={<Series />} />
-
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
