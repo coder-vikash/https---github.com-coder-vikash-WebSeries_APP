@@ -1,0 +1,23 @@
+.btn-grp {
+  background-color: #000; /* Black like ZEE5 theme */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.btn-grp:hover {
+  background-color: #e50914; /* Netflix red on hover */
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-grp:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.5);
+}
