@@ -38,7 +38,7 @@ export default function Login() {
       <div className="login-card">
         <h3 className="text-center mb-4 text-danger">Login to CineStream</h3>
 
-        {/* 🔔 ALERT MESSAGE */}
+        {/* ALERT MESSAGE */}
         {alert.message && (
           <div className={`alert alert-${alert.type} text-center`} role="alert">
             {alert.message}

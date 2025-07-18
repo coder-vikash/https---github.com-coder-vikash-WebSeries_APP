@@ -8,7 +8,7 @@ export default function Contact() {
       style={{ backgroundColor: "#121212", minHeight: "90vh", color: "white" }}
     >
       <div className="text-center mb-5">
-        <h1 className="text-danger fw-bold">📞 Contact Us</h1>
+        <h1 className="text-danger fw-bold"> Contact Us</h1>
         <p className="text-secondary fs-5">
           We'd love to hear from you! Please fill out the form below.
         </p>
