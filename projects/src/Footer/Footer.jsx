@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { Container, Row, Col, Nav, NavLink } from "react-bootstrap";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
@@ -113,8 +114,7 @@ const Footer = () => {
       <div class="footer-social">
         <p>Follow Us</p>
         <div class="social-icons">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
           <i class="fab fa-instagram"></i>
           <i class="fab fa-linkedin"></i>
           <i class="fab fa-youtube"></i>

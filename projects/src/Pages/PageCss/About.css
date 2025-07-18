@@ -1,5 +1,5 @@
 /* src/Pages/About.css */
-.container {
+/* .container {
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -11,4 +11,28 @@ li {
 
 .shadow {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+} */
+
+/* src/components/AboutUs.css */
+/* .about-section h2 {
+  color: #1d3557;
+}
+
+.about-section .text-primary {
+  color: #457b9d !important;
+}
+
+.about-section p.lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+} */
+
+.text-gradient {
+  background: linear-gradient(to right, #e63946, #f1faee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-page li {
+  margin-bottom: 0.5rem;
 }
