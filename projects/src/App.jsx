@@ -12,6 +12,7 @@ import Movies from "./Pages/Movies.jsx";
 import Series from "./Pages/Series.jsx";
 import SearchResults from "./Pages/SearchResult.jsx";
 import "./web.css";
+import Footer from "./Footer/Footer.jsx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             element={
               <>
                 <Web_Series />
+                <Footer />
               </>
             }
           />
