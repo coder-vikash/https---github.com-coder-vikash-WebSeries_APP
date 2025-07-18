@@ -14,7 +14,7 @@ const movies = [
     id: 2,
     title: "Money Heist",
     image:
-      "https://wallpapers.com/images/high/money-heist-rio-and-vault-g2xs7oz7eesz7klw.webp",
+      "https://m.media-amazon.com/images/M/MV5BMmNkMWZmNWQtNjljNi00YTU4LTg0ZTEtY2U0OTk0MmI3NTNmXkEyXkFqcGc@._V1_.jpg",
     link: "https://www.netflix.com/in/title/80192098",
   },
   {
