@@ -20,10 +20,6 @@ function About() {
           <h1 className="display-5 fw-bold text-gradient">
             Welcome to CineStream
           </h1>
-          <p className="lead text-muted mx-auto" style={{ maxWidth: "600px" }}>
-            Your personal universe of movies & web series — stream, explore, and
-            escape into stories that matter.
-          </p>
         </div>
 
         {/* Core Sections */}
@@ -77,10 +73,10 @@ function About() {
 
         {/* Footer */}
         <div className="text-center mt-5 pt-4 border-top border-secondary">
-          <p className="text-muted small mb-0">
+          {/* <p className="text-muted small mb-9">
             © {currentYear} CineStream. Crafted for story lovers. All rights
             reserved.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
