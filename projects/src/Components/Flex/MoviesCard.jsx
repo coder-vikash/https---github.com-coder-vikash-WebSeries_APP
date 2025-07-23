@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const MovieCard = ({ movie }) => {
   const [likes, setLikes] = useState(0);
@@ -31,14 +32,19 @@ const MovieCard = ({ movie }) => {
     <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
       <div className="card h-100 shadow-sm">
         <img
-          src={movie.image}
+          src={
+            movie.Poster !== "N/A"
+              ? movie.Poster
+              : "https://via.placeholder.com/300x450?text=No+Poster"
+          }
           className="card-img-top"
-          alt={movie.title}
+          alt={movie.Title}
           style={{ height: "300px", objectFit: "cover" }}
         />
         <div className="card-body d-flex flex-column">
-          <h5 className="card-title">{movie.title}</h5>
-          <p className="card-text text-muted">{movie.genre}</p>
+          <h5 className="card-title">{movie.Title}</h5>
+          <p className="card-text text-muted">Year: {movie.Year}</p>
+          <p className="card-text text-muted">Type: {movie.Type}</p>
 
           <div className="d-flex justify-content-between align-items-center mb-3">
             <button
@@ -67,12 +73,12 @@ const MovieCard = ({ movie }) => {
           </div>
 
           <a
-            href={movie.trailer}
+            href={`https://www.imdb.com/title/${movie.imdbID}`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary mt-auto"
           >
-            Watch Trailer
+            View Details
           </a>
         </div>
       </div>
