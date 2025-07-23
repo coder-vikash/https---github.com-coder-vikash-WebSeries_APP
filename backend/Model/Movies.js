@@ -1,20 +1,14 @@
+// models/Movie.js
 const mongoose = require("mongoose");
 
 const movieSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    required: true,
-  },
+  title: String,
   subtitle: String,
-  poster: String, // Path to uploaded image
-  video: String, // Path to uploaded video
   genre: [String],
   language: String,
   releaseDate: Date,
-  createdAt: {
-    type: Date,
-    default: Date.now,
-  },
+  poster: String, // path to image file
+  video: String, // path to video file
 });
 
 module.exports = mongoose.model("Movie", movieSchema);
