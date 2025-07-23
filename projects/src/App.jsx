@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Login from "./components/LoginPage/Login.jsx";
 import Signup from "./components/LoginPage/SignUp.jsx";
@@ -11,8 +12,13 @@ import WebSeries from "./Pages/Web_Serise.jsx";
 import Movies from "./Pages/Movies.jsx";
 import Series from "./Pages/Series.jsx";
 import SearchResults from "./Pages/SearchResult.jsx";
-import "./web.css";
 import Footer from "./Footer/Footer.jsx";
+
+// ✅ You forgot to import MovieForm
+import MovieForm from "./components/MoviForm/MoviForm.jsx";
+import MovieDashboard from "./Pages/Dashboard/DashBoard.jsx";
+
+import "./web.css";
 
 function App() {
   return (
@@ -20,17 +26,18 @@ function App() {
       <Navbar />
 
       <div style={{ paddingTop: "57px" }}>
-        {" "}
         <Routes>
           <Route
             path="/"
             element={
               <>
                 <Web_Series />
+                <MovieDashboard />
                 <Footer />
               </>
             }
           />
+          <Route path="/movi/dashboard" element={<MovieDashboard />} />
           <Route path="/search" element={<SearchResults />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/webseries" element={<WebSeries />} />
@@ -39,6 +46,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/moviform" element={<MovieForm />} />
         </Routes>
       </div>
     </Router>
