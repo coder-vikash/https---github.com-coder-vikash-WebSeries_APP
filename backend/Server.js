@@ -12,6 +12,13 @@ app.use(express.json());
 app.use("/uploads", express.static("uploads")); // serve image files
 
 // Routes
+
+const userRoutes = require("./Routes/userRoute");
+app.use("/api/users", userRoutes); // Add this line
+
+const userRoutes = require("./Routes/userRoute");
+app.use("/api/users", userRoutes); // Add this line
+
 app.use("/api/movies", movieRoutes);
 
 // MongoDB connection
