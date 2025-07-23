@@ -21,3 +21,25 @@
   outline: none;
   box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.5);
 }
+
+/* this is the web_series css */
+
+.search-input {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sort-group {
+  min-width: 200px;
+}
+
+.row {
+  gap: 20px 0;
+}

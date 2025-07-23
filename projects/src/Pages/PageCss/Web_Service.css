@@ -1,0 +1,47 @@
+.page-wrapper {
+  min-height: 100vh;
+}
+
+.btn-grp {
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-grp.active {
+  background: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+.btn-grp:hover {
+  background: #f0f0f0;
+}
+
+.btn-grp.active:hover {
+  background: #0b5ed7;
+}
+
+.search-input {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sort-group {
+  min-width: 200px;
+}
+
+.row {
+  gap: 20px 0;
+}
