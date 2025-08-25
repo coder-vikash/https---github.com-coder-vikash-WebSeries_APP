@@ -78,9 +78,9 @@ export default function Navbar() {
             onSubmit={handleSearch}
           >
             <input
-              className="form-control bg-dark text-white"
+              className="form-control bg-black text-white"
               type="search"
-              placeholder="Search movies, genre or language..."
+              placeholder="Developed By @Vikash Search movies, genre or language..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               style={{ minWidth: "200px" }}

@@ -81,6 +81,9 @@ export default function Contact() {
         <p>
           <i className="fas fa-envelope me-2"></i>support@cinestream.com
         </p>
+        <p>
+          <i className="fas fa-envelope me-2"></i>Developed By @Vikash kumar
+        </p>
       </div>
     </div>
   );

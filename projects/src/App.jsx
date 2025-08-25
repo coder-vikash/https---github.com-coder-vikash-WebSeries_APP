@@ -13,11 +13,13 @@ import Series from "./Pages/Series.jsx";
 import SearchResults from "./Pages/SearchResult.jsx";
 import "./web.css";
 import Footer from "./Footer/Footer.jsx";
+import { MoviApi } from "./Components/Flex/MoviApi/MoviApi.jsx";
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <MoviApi />
 
       <div style={{ paddingTop: "57px" }}>
         {" "}
@@ -26,6 +28,7 @@ function App() {
             path="/"
             element={
               <>
+                <MoviApi />
                 <Web_Series />
                 <Footer />
               </>

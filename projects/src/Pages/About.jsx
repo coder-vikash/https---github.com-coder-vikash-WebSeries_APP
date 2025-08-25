@@ -67,6 +67,10 @@ function About() {
                 innovation, we are shaping the future of streaming — one viewer
                 at a time.
               </p>
+              <p>
+                <i className="fas fa-envelope me-2"></i>Developed By @Vikash
+                Kumar
+              </p>
             </div>
           </div>
         </div>

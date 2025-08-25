@@ -136,7 +136,10 @@ const Footer = () => {
       </div>
 
       <div class="footer-bottom">
-        <p>© Copyright 2025 Fabindia.com. All rights reserved.</p>
+        <p>
+          © Copyright 2025 Fabindia.com. All rights reserved:- Developed By
+          Vikash Kumar.
+        </p>
       </div>
     </footer>
   );
