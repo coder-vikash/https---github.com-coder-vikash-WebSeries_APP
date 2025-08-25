@@ -73,9 +73,9 @@ const SeriesCard = ({ web }) => {
           </div>
         </div>
 
-        {/* Card Body */}
+        {/*This is the  Card Body */}
         <div className="card-body d-flex flex-column">
-          {/* Action Buttons */}
+          {/* this is the Action Buttons */}
           <div className="d-flex justify-content-between align-items-center mb-3">
             <button
               className={`btn btn-sm ${
@@ -108,9 +108,9 @@ const SeriesCard = ({ web }) => {
             </button>
           </div>
 
-          {/* View Details Button */}
+          {/* This is the View Details Button */}
           <a
-            href={`https://www.imdb.com/title/${web.imdbID}`}
+            href={web.link || `https://www.imdb.com/title/${web.imdbID}`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary mt-auto rounded-pill d-flex align-items-center justify-content-center"

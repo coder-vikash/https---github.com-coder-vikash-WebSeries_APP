@@ -12,7 +12,7 @@ const MoviesPage = () => {
       try {
         setLoading(true);
         const popularMovies = await searchMedia("movie", "movie");
-        setMovies(popularMovies.slice(0, 20)); // Show first 12 movies
+        setMovies(popularMovies.slice(0, 20));
       } catch (err) {
         setError(err.message);
       } finally {
